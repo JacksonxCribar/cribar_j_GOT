@@ -142,3 +142,23 @@ video {
 	width: 65%;
 	border: thin solid #949393;
 }
+
+.houseTitle{
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'GOT_font';
+	-webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.houseTitle:hover
+{
+	-ms-transform: scale(.80);
+        -moz-transform: scale(.80);
+        -webkit-transform: scale(.80);
+        -o-transform: scale(.80);
+        transform: scale(.80);
+}

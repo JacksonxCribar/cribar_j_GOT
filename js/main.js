@@ -7,6 +7,7 @@
         lightBox = document.querySelector(".lightbox"),
         vid = lightBox.querySelector('video'),
         houseName = document.querySelector('h1'),
+        houseTitle = document.querySelector('.houseTitle')
         houseDescription = document.querySelector('.house-info');
         
         var trailer = document.getElementById("myVid");
@@ -71,6 +72,7 @@
 
   function setHouseData(name, desc) {
     houseName.textContent = `House ${name}`;
+    houseTitle.textContent = `House - ${name}`;
     houseDescription.textContent = desc;
   }
 
@@ -87,10 +89,9 @@
 
   function animateBanner(event) {
     if (event.target.className.includes('sigilContainer')) {
-      let multiplier = event.target.dataset.offset,
+          let multiplier = event.target.dataset.offset,
           offsetWidth = 600;
-      // 0, 600, 1200, 1800px depending on the math
-      banner.style.right = `${multiplier * offsetWidth}px`;
+          banner.style.right = `${multiplier * offsetWidth}px`;
     }
   }
 
