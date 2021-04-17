@@ -11,12 +11,15 @@
   <main>
     <section id="imageContainer">
     	<div id="houseImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
-    		<img src="images/stark.jpg"/>
-    		<img src="images/baratheon.jpg"/>
-    		<img src="images/lannister.jpg"/>
-    		<img src="images/tully.jpg"/>
-    		<img src="images/greyjoy.jpg"/>
-    		<img src="images/arryn.jpg"/>
+    		<img src="images/stark.jpg" alt="stark" />
+    		<img src="images/baratheon.jpg" alt="baratheon" />
+    		<img src="images/lannister.jpg" alt="lannister" />
+    		<img src="images/tully.jpg" alt="tully" />
+    		<img src="images/greyjoy.jpg" alt="greyjoy" />
+    		<img src="images/arryn.jpg" alt="arryn" />
+            <img src="images/targaryen.jpg" alt="targaryen" />
+            <img src="images/frey.jpg" alt="frey" />
+            <img src="images/tyrell.jpg" alt="tyrell" />
         </div>
     </section>
 
@@ -31,6 +34,11 @@
             <li><div class="sigilContainer tully" data-offset="3"></div></li>
             <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
             <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="6"></div></li>
+            <li><div class="sigilContainer frey" data-offset="7"></div></li>
+            <li><div class="sigilContainer tyrell" data-offset="8"></div></li>
+
+
         </ul>
     </nav>
 
@@ -41,7 +49,7 @@
     <!-- lightbox goes here -->
     <section class="lightbox">
       <a href="#" class="close">X</a>
-      <video src="video/House-Stark.mp4" controls></video>
+      <video id="myVid" src="assets/House-Stark.mp4" controls loop="true"></video>
     </section>
     <!-- end lightbox -->
 </main>
